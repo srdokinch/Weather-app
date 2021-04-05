@@ -3,3 +3,41 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(#2f96a3, #303e8f);
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.location, .temperture {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.temperture {
+  flex-direction: column;
+}
+
+.degree-section {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.degree-section span {
+  margin: 10px;
+  font-size: 30px;
+}
+
+.degree-section h2 {
+  font-size: 40px;
+}
