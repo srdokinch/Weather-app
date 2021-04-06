@@ -44,7 +44,15 @@ window.addEventListener('load', () => {
               }
             });
         });
-    });
+    },
+    (error => {
+      swal({
+        title : "位置情報を許可してください",
+        text : "位置情報を許可しないとこのアプリは使用できません",
+        icon : "warning",
+      });
+    })
+   );
   }
   function setIcon(icon,iconID) {
     const skycons = new Skycons({colour: "white"});
