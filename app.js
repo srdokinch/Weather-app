@@ -42,8 +42,8 @@ window.addEventListener('load', () => {
                 temperatureSpan.textContent = "F";
                 temperatureDegree.textContent = temperature;
               }
-            })
-        })
+            });
+        });
     });
   }
   function setIcon(icon,iconID) {
